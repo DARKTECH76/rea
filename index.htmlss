@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Click to Reveal</title>
+<style>
+  img {
+    width: 500px; /* You can change the size */
+    cursor: pointer;
+    transition: filter 0.3s ease;
+  }
+</style>
+</head>
+<body>
+
+<h2>Click the image to reveal it</h2>
+
+<img id="revealImage" src="Darkgp5.jpg" alt="Hidden Image">
+
+<script>
+  const img = document.getElementById('revealImage');
+  img.addEventListener('click', () => {
+    img.src = "Darkgp6.jpg";
+  });
+</script>
+
+</body>
+</html>
